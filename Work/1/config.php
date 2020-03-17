@@ -2,10 +2,11 @@
 $hostName = 'localhost';
 $userName = 'root';
 $password = '';
-$databaseName = 'CSC2020';
+$databaseName = 'Holi';
     
 $conn = mysqli_connect($hostName, $userName, $password, $databaseName);   
 if ($conn){
+echo "Connected";
 }
 else{
     echo mysqli_connect_error();
