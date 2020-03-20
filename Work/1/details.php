@@ -3,6 +3,8 @@
 <html>
 <head>
 <title>Records</title>
+<link rel="stylesheet" href="ok.css">
+<style></style>
 </head>
 <body>
 
@@ -11,8 +13,9 @@ $sql = "SELECT * FROM `Students`";
 $result = mysqli_query($conn, $sql);
 
 if($result->num_rows > 0){
-?>   
-<table border="1">
+?> 
+ 
+<table border="1" class = "container">
     <thead>
         <tr>
             <th>Enrollment</th>
@@ -43,7 +46,7 @@ if($result->num_rows > 0){
     <?php } ?>
     </tbody>
     
-<?php } ?>
+<?php } ?> </div>
 </table>   
 </body>   
 </html>
