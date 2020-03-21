@@ -1,0 +1,45 @@
+<head>
+     <title>Problem 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+      fetch('./parse.json').then(function (response){
+          return response.json();
+      }).then(function (data){
+        restprint(data)
+      });
+
+var foodyo=json.loads(open('foodyo_output.json').read());
+function recurr(dic,n){
+    if (dic['selected']==1){
+        c("-"*n,">",dic['name']);
+	}
+       var n=n+2;
+       var l=dic['children']
+        for (var v = 0 ;v< l ;v++){
+            recurr(v,n)
+        } }
+var name,li;
+var value = fooduo['body']['Recommendations'];
+for( var i =0 i< value ;i++){
+   var name=i['RestaurantName'];
+    print("-->",name);
+    li=i['menu'];
+    for (var j =0 ; j< li j++ ){
+        if (j['type']=='sectionheader'){
+            lis=j['children'];
+            for (var k=0 ; k< lis ;k++){
+                if (k['type']=='item' and k['selected']==1){
+                    print("----->",k['name']);
+                    lists=k['children'];
+			}
+                    for(var k= 0 ; k<lists; k++){
+                        recurr(m,7);
+
+		}
+	}
+}
+
+    </script>
+</body>
+</html>
